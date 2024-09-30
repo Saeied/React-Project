@@ -13,7 +13,7 @@ import { FaRegHeart } from "react-icons/fa";
 function ProductCard() {
   return (
     <Card
-      className="p-4 w-[296px]"
+      className="p-4"
       shadow="sm"
       isPressable
       onPress={() => console.log("item pressed")}
@@ -23,14 +23,14 @@ function ProductCard() {
           shadow="sm"
           radius="lg"
           width="100%"
-          className="w-full object-cover h-[180px]"
+          className="w-full h-[450px] md:h-[180px]"
           classNames={{ wrapper: "w-full" }}
           src={`https://toplearn.com/img/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4_%D9%BE%D8%B1%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%D8%AA%D8%B1%DB%8C%D9%86_%D9%85%D8%A7%DA%98%D9%88%D9%84_%D9%87%D8%A7%DB%8C_%D8%AC%D8%A7%D9%88%D8%A7%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA_%D8%AF%D8%B1_React.jpg`}
         />
       </CardHeader>
       <CardBody className="text-right px-0">
         <h3 className="text-lg">دوره جامع React.js صفر تا صد</h3>
-        <div className="flex justify-center mt-4 p-4 gap-3 rounded-[1.5rem] bg-[#ECEFF1]">
+        <div className="hidden sm:flex justify-center mt-4 p-4 gap-20 lg:gap-3 rounded-[1.5rem] bg-[#ECEFF1]">
           <p className="text-sm flex justify-center items-center gap-1">
             <FiBookOpen />
             202درس

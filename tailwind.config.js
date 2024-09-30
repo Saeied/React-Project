@@ -12,6 +12,12 @@ export default {
       colors: {
         primary: "#2196F3",
       },
+      screens: {
+        sm: "576px",
+        md: "992px",
+        lg: "1200px",
+        xl: "1400px",
+      },
     },
     container: {
       center: true,

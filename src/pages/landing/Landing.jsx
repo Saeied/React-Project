@@ -1,11 +1,7 @@
-import Header from "../../components/landing/Header";
+// import Header from "../../components/landing/Header";
 
 function Landing() {
-  return (
-    <>
-      <Header />
-    </>
-  );
+  return <h1>Landing Page</h1>;
 }
 
 export default Landing;
