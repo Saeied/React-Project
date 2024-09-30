@@ -25,7 +25,7 @@ function ProductCard() {
           width="100%"
           className="w-full h-[320px] md:h-[240px] lg:h-[200px]"
           classNames={{ wrapper: "w-full" }}
-          src={`https://toplearn.com/img/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4_%D9%BE%D8%B1%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%D8%AA%D8%B1%DB%8C%D9%86_%D9%85%D8%A7%DA%98%D9%88%D9%84_%D9%87%D8%A7%DB%8C_%D8%AC%D8%A7%D9%88%D8%A7%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA_%D8%AF%D8%B1_React.jpg`}
+          src={`https://classapi.sepehracademy.ir///Pictures//Course//8MbtJ4hTAaOk3KPcptqZ_e271cac0-aa80-42e1-bada-e178eac9ab6a.webp`}
         />
       </CardHeader>
       <CardBody className="text-right px-0">

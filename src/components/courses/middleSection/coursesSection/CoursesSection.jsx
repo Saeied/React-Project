@@ -3,10 +3,7 @@ import InputSection from "./InputSection";
 
 function CoursesSection() {
   return (
-    <div
-      id="courseSection"
-      className="w-full lg:w-[70%] xl:w-[75%] bg-slate-500 h-[900px]"
-    >
+    <div className="w-full lg:w-[70%] xl:w-[75%] bg-slate-500 h-[900px]">
       <InputSection />
       <CoursesBox />
     </div>
