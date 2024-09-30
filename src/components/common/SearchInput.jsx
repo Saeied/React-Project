@@ -2,7 +2,7 @@ function SearchInput() {
   return (
     <div
       id="searchInputBox"
-      className="text-sm sm:text-lg flex items-center w-full rounded-2xl ps-5 shadow-[0_8px_24px_rgba(149,157,165,0.2)] group has-[:focus]:border-2 has-[:focus]:border-primary"
+      className="bg-white text-sm sm:text-lg flex items-center w-full rounded-2xl ps-5 shadow-[0_8px_24px_rgba(149,157,165,0.2)] group has-[:focus]:border-2 has-[:focus]:border-primary"
     >
       <input
         id="searchInput"
