@@ -10,7 +10,7 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { FiBookOpen } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
 
-function CourseCard({
+function ColumnCourseCard({
   courseId,
   title,
   tumbImageAddress,
@@ -76,4 +76,4 @@ function CourseCard({
   );
 }
 
-export default CourseCard;
+export default ColumnCourseCard;
