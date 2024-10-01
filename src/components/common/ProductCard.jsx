@@ -10,7 +10,7 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { FiBookOpen } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
 
-function ProductCard() {
+function ProductCard({ courseId, title, tumbImageAddress , cost , teacherName , currentRegistrants , likeCount }) {
   return (
     <Card
       className="p-4"
@@ -23,14 +23,14 @@ function ProductCard() {
           shadow="sm"
           radius="lg"
           width="100%"
-          className="w-full h-[320px] md:h-[240px] lg:h-[200px]"
+          className="w-full h-[330px] md:h-[275px] lg:h-[220px]"
           classNames={{ wrapper: "w-full" }}
-          src={`https://classapi.sepehracademy.ir///Pictures//Course//8MbtJ4hTAaOk3KPcptqZ_e271cac0-aa80-42e1-bada-e178eac9ab6a.webp`}
+          src={tumbImageAddress}
         />
       </CardHeader>
       <CardBody className="text-right px-0">
-        <h3 className="text-lg">دوره جامع React.js صفر تا صد</h3>
-        <div className="hidden sm:flex justify-center mt-4 p-4 gap-20 lg:gap-3 rounded-[1.5rem] bg-[#ECEFF1]">
+        <h3 className="text-lg">{title}</h3>
+        <div className="hidden sm:flex justify-center mt-4 p-4 gap-12 lg:gap-5 rounded-[1.5rem] bg-[#ECEFF1]">
           <p className="text-sm flex justify-center items-center gap-1">
             <FiBookOpen />
             202درس
@@ -44,18 +44,18 @@ function ProductCard() {
         </div>
         <div className="flex justify-between mt-4">
           <p>
-            <b>مدرس:</b> دکتر بحرالعلوم
+            <b>مدرس:</b> {teacherName}
           </p>
-          <p>256 دانش‌آموز</p>
+          <p>{currentRegistrants} دانش‌آموز</p>
         </div>
       </CardBody>
       <CardFooter className="justify-between p-0 mt-1">
         <p className="flex items-center gap-1 text-lg text-[#f44336] bg-[#ffebee] py-2 px-5 rounded-full">
           <FaRegHeart />
-          12
+          {likeCount}
         </p>
         <p className="text-md">
-          <b className="text-[#2196f3] me-1 text-lg">500,000</b> تومان
+          <b className="text-[#2196f3] me-1 text-lg">{cost}</b> تومان
         </p>
       </CardFooter>
     </Card>
