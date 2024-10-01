@@ -2,14 +2,14 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Pagination } from "@nextui-org/react";
 import axios from "axios";
-import ProductCard from "../../../common/ProductCard";
+import CourseCard from "../../../common/CourseCard";
 
 const fetchCourses = (pageNumber) =>
   axios.get(
     `https://classapi.sepehracademy.ir/api/Home/GetCoursesWithPagination?PageNumber=${pageNumber}&RowsOfPage=9&SortingCol=Active&SortType=DESC&TechCount=0`
   );
 
-function CoursesBox() {
+function CoursesList() {
   const [page, setPage] = useState(1);
   const { data, isLoading, error, isError, isFetching, refetch } = useQuery({
     queryKey: ["courses", page],
@@ -24,7 +24,7 @@ function CoursesBox() {
     <>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 py-4">
         {data.data.courseFilterDtos.map((course) => (
-          <ProductCard key={course.courseId} {...course} />
+          <CourseCard key={course.courseId} {...course} />
         ))}
       </div>
       <Pagination
@@ -44,4 +44,4 @@ function CoursesBox() {
   );
 }
 
-export default CoursesBox;
+export default CoursesList;
