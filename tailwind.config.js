@@ -11,6 +11,7 @@ export default {
     extend: {
       colors: {
         primary: "#2196F3",
+        dark: "#252641",
       },
       screens: {
         sm: "576px",

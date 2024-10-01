@@ -22,7 +22,7 @@ function CoursesBox() {
 
   return (
     <>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 py-4 bg-yellow-400">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 py-4">
         {data.data.courseFilterDtos.map((course) => (
           <ProductCard key={course.courseId} {...course} />
         ))}
