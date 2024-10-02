@@ -10,7 +10,15 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { FiBookOpen } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
 
-function ProductCard({ courseId, title, tumbImageAddress , cost , teacherName , currentRegistrants , likeCount }) {
+function ColumnCourseCard({
+  courseId,
+  title,
+  tumbImageAddress,
+  cost,
+  teacherName,
+  currentRegistrants,
+  likeCount,
+}) {
   return (
     <Card
       className="p-4"
@@ -55,11 +63,17 @@ function ProductCard({ courseId, title, tumbImageAddress , cost , teacherName , 
           {likeCount}
         </p>
         <p className="text-md">
-          <b className="text-[#2196f3] me-1 text-lg">{cost}</b> تومان
+          {cost > 0 ? (
+            <>
+              <b className="text-primary me-1 text-lg">{cost}</b> تومان
+            </>
+          ) : (
+            "رایگان"
+          )}
         </p>
       </CardFooter>
     </Card>
   );
 }
 
-export default ProductCard;
+export default ColumnCourseCard;

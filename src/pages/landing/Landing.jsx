@@ -1,7 +1,9 @@
 // import Header from "../../components/landing/Header";
 
+import Footer from "../../components/common/footer/Footer";
+
 function Landing() {
-  return <h1>Landing Page</h1>;
+  return <Footer />;
 }
 
 export default Landing;

@@ -6,6 +6,7 @@ function Provider({ children }) {
   const [isLogin, setIsLogin] = useState(false);
   const [bagIconNum, setBagIconNum] = useState(5);
   const [searchKey, setSearchKey] = useState("");
+  const [coursesShowStatus, setCoursesShowStatus] = useState("column");
 
   return (
     <AppContext.Provider
@@ -16,6 +17,8 @@ function Provider({ children }) {
         setBagIconNum,
         searchKey,
         setSearchKey,
+        coursesShowStatus,
+        setCoursesShowStatus,
       }}
     >
       {children}
