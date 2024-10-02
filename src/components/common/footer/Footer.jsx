@@ -56,7 +56,7 @@ function Footer() {
           <p className="sm:border-t-0 sm:border-r-1 px-11">قوانین و مقررات</p>
         </div>
         <div className="p-2 text-xs md:text-[1rem] flex-col md:flex-row flex justify-between bg-[#00000033] md:p-5 rounded-2xl gap-4">
-          <p className="flex items-center gap-3">
+          <p className="flex items-center justify-center gap-3">
             <AiOutlineCopyright size={30} />
             تمام حقوق مادی و معنوی این مجموعه متعلق به HexaSquad.ir میباشد
           </p>
